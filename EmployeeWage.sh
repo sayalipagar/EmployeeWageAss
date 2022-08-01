@@ -17,4 +17,12 @@ fi
 isPartTime=1;
 isFullTime=2;
 empRateperHr=20;
+empCheck=$((RANDOM%3));
+
+case $empCheck in
+$isFullTime)
+empHrs=8;;
+$PartTime)
+empHrs=0;;
+esac
 
