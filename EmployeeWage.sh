@@ -16,13 +16,21 @@ fi
 
 isPartTime=1;
 isFullTime=2;
-empRateperHr=20;
+empRateperHr=200;
+WorkingDays=20;
+
+for (( day1; day<=$WorkingDays; day++ ))
+do
 empCheck=$((RANDOM%3));
 
 case $empCheck in
+$isPartTime)
+   empHrs=4;;
 $isFullTime)
-empHrs=8;;
-$PartTime)
-empHrs=0;;
+   empHrs=8;;
+*)
+    empHrs=0;;
 esac
+
+salary=$(($emphrs * $empRateperHr));
 
