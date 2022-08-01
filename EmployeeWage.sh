@@ -13,3 +13,8 @@ else
 echo "employee is absent"
 
 fi
+
+isPartTime=1;
+isFullTime=2;
+empRateperHr=20;
+
