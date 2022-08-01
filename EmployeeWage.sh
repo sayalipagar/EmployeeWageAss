@@ -32,5 +32,6 @@ $isFullTime)
     empHrs=0;;
 esac
 
-salary=$(($emphrs * $empRateperHr));
-
+salary=$(( $empHrs * $empRateperHr ));
+echo "Employee has earn $salary per month"
+done
